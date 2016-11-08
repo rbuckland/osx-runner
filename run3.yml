@@ -1,0 +1,10 @@
+output:
+- lines_to_keep: 500
+menuitems:
+  - name: long-running-ssh
+    command: ssh -N -v -L 6515:localhost:6515 server1
+  - name: cntlm 
+    command: /opt/cntlm/cntlm -f 
+  - name: handbrake
+    command: /opt/bin/handbrake-all --indir /mnt/media/raw_rips --outdir /mnt/media/movies/uncategorised
+  
